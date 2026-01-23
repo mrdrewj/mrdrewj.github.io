@@ -3,42 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Drew J — Portfolio</title>
-  <meta name="description" content="Drew J — side projects in optics, solar physics, archaeology, and software." />
+  <title>Drew J</title>
+  <meta name="description" content="Drew J — projects in optics, solar physics, archaeology, and software." />
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header class="header">
-      <div class="mark" aria-hidden="true"></div>
-      <div>
-        <h1 class="title">Drew J</h1>
-        <p class="subtitle">Portfolio of side work: optics · solar physics · archaeology · software</p>
+  <div class="container">
+    <a class="brand" href="/">drewj.net</a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="/about/">about</a>
+      <a href="/projects/">projects</a>
+      <a href="/resume/">resume</a>
+    </nav>
+
+    <header>
+      <h1 class="h1">A small place for my work</h1>
+      <div class="byline">DREW J</div>
+      <p class="lede">
+        I build practical tools and write-ups across optics, solar physics, archaeology, and software.
+        This site is intentionally quiet: one column, few distractions.
+      </p>
+
+      <div class="actions" aria-label="Links">
+        <a class="action" href="/about/">About</a>
+        <a class="action" href="/resume/">Resume</a>
+        <a class="action" href="/projects/">Projects</a>
       </div>
     </header>
 
-    <main class="card">
-      <nav class="nav">
-        <a class="btn" href="/about/">About</a>
-        <a class="btn" href="/resume/">Resume</a>
-        <a class="btn" href="/projects/">Projects</a>
-      </nav>
+    <hr class="rule" />
 
-      <section class="section">
-        <h2 class="h2">Now</h2>
-        <p class="p">
-          I build small, opinionated tools and write-ups. This site is intentionally minimal.
-        </p>
-      </section>
+    <section>
+      <div class="sectionTitle">Currently</div>
+      <p class="p">
+        Working on: <em>replace this line with whatever you want</em> (e.g., a small optics simulator,
+        a solar data pull + plots, a catalog tool for field notes).
+      </p>
+    </section>
 
-      <footer class="footer">
-        <span class="muted">© <span id="year"></span> Drew J</span>
-        <span class="dot" aria-hidden="true">·</span>
-        <a class="link muted" href="mailto:you@example.com">you@example.com</a>
-        <span class="dot" aria-hidden="true">·</span>
-        <a class="link muted" href="https://github.com/your-username">GitHub</a>
-      </footer>
-    </main>
+    <footer class="footer">
+      <div>© <span id="year"></span> Drew J</div>
+      <div style="margin-top:8px;">
+        <a href="mailto:you@example.com">you@example.com</a>
+        &nbsp;·&nbsp;
+        <a href="https://github.com/your-username">github</a>
+      </div>
+    </footer>
   </div>
 
   <script src="/assets/js/main.js" defer></script>

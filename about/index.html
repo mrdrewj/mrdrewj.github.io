@@ -8,38 +8,38 @@
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header class="header">
-      <a class="back" href="/" aria-label="Back to home">← Home</a>
-      <div class="spacer"></div>
-      <span class="badge">About</span>
-    </header>
+  <div class="container">
+    <div class="backRow"><a href="/">← home</a></div>
 
-    <main class="card">
-      <h1 class="title">About</h1>
-      <p class="p">
-        I’m a software developer with interests in optics, solar physics, and archaeology. I like building
-        small tools, writing clear docs, and keeping things simple.
-      </p>
+    <h1 class="pageTitle">About</h1>
+    <div class="byline">DREW J</div>
 
-      <div class="rule"></div>
+    <hr class="rule" />
 
-      <h2 class="h2">Focus areas</h2>
-      <ul class="list">
-        <li>Data + automation</li>
-        <li>Scientific computing + visualization</li>
-        <li>Practical tooling and clean interfaces</li>
-      </ul>
+    <p class="p">
+      Short version: I’m a software developer who likes building small, calm tools and writing clear notes.
+      My side interests include optics, solar physics, and archaeology.
+    </p>
 
-      <div class="rule"></div>
+    <div class="sectionTitle">Focus</div>
+    <ul class="list">
+      <li>Python automation and APIs</li>
+      <li>Scientific computing and visualization</li>
+      <li>Simple interfaces and clean documentation</li>
+    </ul>
 
-      <h2 class="h2">Links</h2>
-      <p class="p">
-        <a class="link" href="https://github.com/your-username">GitHub</a>
-        <span class="dot" aria-hidden="true">·</span>
-        <a class="link" href="mailto:you@example.com">Email</a>
-      </p>
-    </main>
+    <hr class="rule" />
+
+    <p class="p">
+      Links:
+      <a href="https://github.com/your-username">GitHub</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:you@example.com">Email</a>
+    </p>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Drew J</div>
+    </footer>
   </div>
 
   <script src="/assets/js/main.js" defer></script>

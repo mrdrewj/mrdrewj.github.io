@@ -8,50 +8,31 @@
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header class="header">
-      <a class="back" href="/" aria-label="Back to home">← Home</a>
-      <div class="spacer"></div>
-      <span class="badge">Projects</span>
-    </header>
+  <div class="container">
+    <div class="backRow"><a href="/">← home</a></div>
 
-    <main class="card">
-      <h1 class="title">Projects</h1>
-      <p class="p muted">A small selection. More coming as I polish write-ups.</p>
+    <h1 class="pageTitle">Projects</h1>
+    <div class="byline">SELECTED</div>
 
-      <div class="grid">
-        <a class="tile" href="#" aria-label="Project 1">
-          <div class="tile-top">
-            <span class="tile-title">Optics Toolkit</span>
-            <span class="pill">Python</span>
-          </div>
-          <p class="tile-desc">Scripts and notebooks for wavefront / imaging experiments.</p>
-        </a>
+    <hr class="rule" />
 
-        <a class="tile" href="#" aria-label="Project 2">
-          <div class="tile-top">
-            <span class="tile-title">Solar Notes</span>
-            <span class="pill">Data</span>
-          </div>
-          <p class="tile-desc">Data pulls, quick plots, and small interpretive write-ups.</p>
-        </a>
+    <div class="sectionTitle">Software</div>
+    <ul class="list">
+      <li><a href="#">Optics Toolkit</a> — small Python utilities and notebooks</li>
+      <li><a href="#">Solar Data Notes</a> — scripts + plots + short interpretations</li>
+      <li><a href="#">Field Catalog</a> — minimal catalog UI for references/finds</li>
+    </ul>
 
-        <a class="tile" href="#" aria-label="Project 3">
-          <div class="tile-top">
-            <span class="tile-title">Field Catalog</span>
-            <span class="pill">Web</span>
-          </div>
-          <p class="tile-desc">A minimal catalog UI for organizing finds and references.</p>
-        </a>
-      </div>
+    <hr class="rule" />
 
-      <div class="rule"></div>
+    <p class="p">
+      If you want to keep it ultra-minimal, keep this as a list. Later you can create
+      pages like <code>/projects/optics-toolkit/</code>.
+    </p>
 
-      <p class="p">
-        Want details? Email me:
-        <a class="link" href="mailto:you@example.com">you@example.com</a>
-      </p>
-    </main>
+    <footer class="footer">
+      <div>© <span id="year"></span> Drew J</div>
+    </footer>
   </div>
 
   <script src="/assets/js/main.js" defer></script>

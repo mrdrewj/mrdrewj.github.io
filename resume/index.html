@@ -8,42 +8,35 @@
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header class="header">
-      <a class="back" href="/" aria-label="Back to home">← Home</a>
-      <div class="spacer"></div>
-      <span class="badge">Resume</span>
-    </header>
+  <div class="container">
+    <div class="backRow"><a href="/">← home</a></div>
 
-    <main class="card">
-      <h1 class="title">Resume</h1>
-      <p class="p muted">
-        Replace this page with a PDF link or a structured resume. For now, this is a simple template.
-      </p>
+    <h1 class="pageTitle">Resume</h1>
+    <div class="byline">OVERVIEW</div>
 
-      <div class="rule"></div>
+    <hr class="rule" />
 
-      <h2 class="h2">Summary</h2>
-      <p class="p">
-        Python developer focused on automation, clean systems, and practical tooling.
-      </p>
+    <p class="p">
+      Put a short public-friendly summary here (no home address; phone optional).
+      If you want a PDF, add it at <code>/assets/resume.pdf</code>.
+    </p>
 
-      <h2 class="h2">Highlights</h2>
-      <ul class="list">
-        <li>Automation + integrations</li>
-        <li>APIs, data pipelines, and developer tooling</li>
-        <li>Documentation-first approach</li>
-      </ul>
+    <p class="p">
+      <a class="action" href="/assets/resume.pdf">Download PDF</a>
+    </p>
 
-      <div class="rule"></div>
+    <hr class="rule" />
 
-      <p class="p">
-        Tip: put your resume PDF at <code class="code">/assets/resume.pdf</code> and link it here.
-      </p>
-      <p class="p">
-        <a class="btn btn-inline" href="/assets/resume.pdf">Download PDF</a>
-      </p>
-    </main>
+    <div class="sectionTitle">Highlights</div>
+    <ul class="list">
+      <li>Python development: automation, tooling, data workflows</li>
+      <li>API work: design, integration, reliability</li>
+      <li>Documentation-first, minimal systems</li>
+    </ul>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Drew J</div>
+    </footer>
   </div>
 
   <script src="/assets/js/main.js" defer></script>
