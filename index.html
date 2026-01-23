@@ -4,51 +4,52 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Drew J</title>
-  <meta name="description" content="Drew J — projects in optics, solar physics, archaeology, and software." />
+  <meta name="description" content="Drew J — portfolio: optics, solar physics, archaeology, and software." />
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
   <div class="container">
-    <a class="brand" href="/">drewj.net</a>
+    <div class="top">
+      <a class="brand" href="/">drewj.net</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/about/">About</a>
+        <a href="/projects/">Projects</a>
+        <a href="/resume/">Resume</a>
+      </nav>
+    </div>
 
-    <nav class="nav" aria-label="Primary">
-      <a href="/about/">about</a>
-      <a href="/projects/">projects</a>
-      <a href="/resume/">resume</a>
-    </nav>
-
-    <header>
-      <h1 class="h1">A small place for my work</h1>
-      <div class="byline">DREW J</div>
-      <p class="lede">
-        I build practical tools and write-ups across optics, solar physics, archaeology, and software.
-        This site is intentionally quiet: one column, few distractions.
+    <header class="hero">
+      <h1 class="h1">Drew J</h1>
+      <p class="sub">
+        I build small tools and write-ups across optics, solar physics, archaeology, and software.
+        Minimal site, minimal noise.
       </p>
-
-      <div class="actions" aria-label="Links">
-        <a class="action" href="/about/">About</a>
-        <a class="action" href="/resume/">Resume</a>
-        <a class="action" href="/projects/">Projects</a>
+      <div class="actions" aria-label="Quick links">
+        <a href="/projects/">See projects</a>
+        <a href="/about/">Read about me</a>
+        <a href="/resume/">Resume</a>
       </div>
     </header>
 
     <hr class="rule" />
 
     <section>
-      <div class="sectionTitle">Currently</div>
-      <p class="p">
-        Working on: <em>replace this line with whatever you want</em> (e.g., a small optics simulator,
-        a solar data pull + plots, a catalog tool for field notes).
+      <div class="kicker">Now</div>
+      <p>
+        Replace this section with a short “currently working on” line and one or two links.
+        Keep it simple; keep it current.
+      </p>
+      <p class="note">
+        Example: “Building an optics simulation notebook and a small solar data pipeline.”
       </p>
     </section>
 
     <footer class="footer">
-      <div>© <span id="year"></span> Drew J</div>
-      <div style="margin-top:8px;">
-        <a href="mailto:you@example.com">you@example.com</a>
-        &nbsp;·&nbsp;
-        <a href="https://github.com/your-username">github</a>
-      </div>
+      <span>© <span id="year"></span> Drew J</span>
+      <span>·</span>
+      <a href="mailto:you@example.com">you@example.com</a>
+      <span>·</span>
+      <a href="https://github.com/your-username">GitHub</a>
     </footer>
   </div>
 

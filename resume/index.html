@@ -9,33 +9,46 @@
 </head>
 <body>
   <div class="container">
-    <div class="backRow"><a href="/">← home</a></div>
+    <div class="top">
+      <a class="brand" href="/">drewj.net</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/about/">About</a>
+        <a href="/projects/">Projects</a>
+        <a href="/resume/" aria-current="page">Resume</a>
+      </nav>
+    </div>
 
-    <h1 class="pageTitle">Resume</h1>
-    <div class="byline">OVERVIEW</div>
-
-    <hr class="rule" />
-
-    <p class="p">
-      Put a short public-friendly summary here (no home address; phone optional).
-      If you want a PDF, add it at <code>/assets/resume.pdf</code>.
-    </p>
-
-    <p class="p">
-      <a class="action" href="/assets/resume.pdf">Download PDF</a>
-    </p>
+    <h1 class="h1">Resume</h1>
+    <p class="sub">Public-friendly version. Keep personal details minimal.</p>
 
     <hr class="rule" />
 
-    <div class="sectionTitle">Highlights</div>
-    <ul class="list">
-      <li>Python development: automation, tooling, data workflows</li>
-      <li>API work: design, integration, reliability</li>
-      <li>Documentation-first, minimal systems</li>
+    <div class="kicker">Summary</div>
+    <p>
+      Python developer focused on automation, APIs, data workflows, and practical tooling.
+    </p>
+
+    <div class="kicker">Highlights</div>
+    <ul>
+      <li>Automation + integrations</li>
+      <li>API design and implementation</li>
+      <li>Data pipelines and visualization</li>
+      <li>Documentation-first approach</li>
     </ul>
 
+    <hr class="rule" />
+
+    <p class="note">
+      If you want a PDF: place it at <code>/assets/resume.pdf</code> and link it below.
+    </p>
+    <p>
+      <a href="/assets/resume.pdf">Download PDF</a>
+    </p>
+
     <footer class="footer">
-      <div>© <span id="year"></span> Drew J</div>
+      <span>© <span id="year"></span> Drew J</span>
+      <span>·</span>
+      <a href="mailto:you@example.com">you@example.com</a>
     </footer>
   </div>
 

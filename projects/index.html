@@ -9,29 +9,33 @@
 </head>
 <body>
   <div class="container">
-    <div class="backRow"><a href="/">← home</a></div>
+    <div class="top">
+      <a class="brand" href="/">drewj.net</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/about/">About</a>
+        <a href="/projects/" aria-current="page">Projects</a>
+        <a href="/resume/">Resume</a>
+      </nav>
+    </div>
 
-    <h1 class="pageTitle">Projects</h1>
-    <div class="byline">SELECTED</div>
+    <h1 class="h1">Projects</h1>
+    <p class="sub">A short list. Each item can link to GitHub or a dedicated page later.</p>
 
     <hr class="rule" />
 
-    <div class="sectionTitle">Software</div>
-    <ul class="list">
-      <li><a href="#">Optics Toolkit</a> — small Python utilities and notebooks</li>
-      <li><a href="#">Solar Data Notes</a> — scripts + plots + short interpretations</li>
-      <li><a href="#">Field Catalog</a> — minimal catalog UI for references/finds</li>
+    <div class="kicker">Selected</div>
+    <ul>
+      <li><a href="#">Optics Toolkit</a> — Python utilities / notebooks for experiments</li>
+      <li><a href="#">Solar Data Notes</a> — scripts that pull data + quick plots</li>
+      <li><a href="#">Field Catalog</a> — lightweight catalog for references and finds</li>
     </ul>
 
-    <hr class="rule" />
-
-    <p class="p">
-      If you want to keep it ultra-minimal, keep this as a list. Later you can create
-      pages like <code>/projects/optics-toolkit/</code>.
+    <p class="note">
+      Later, you can add pages like <code>/projects/optics-toolkit/</code> without changing this layout.
     </p>
 
     <footer class="footer">
-      <div>© <span id="year"></span> Drew J</div>
+      <span>© <span id="year"></span> Drew J</span>
     </footer>
   </div>
 
