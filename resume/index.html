@@ -1,10 +1,11 @@
+<!-- /resume/index.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Resume — Drew J</title>
-  <meta name="description" content="Resume for Drew J." />
+  <meta name="description" content="Resume for Drew Jones." />
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
@@ -18,37 +19,226 @@
       </nav>
     </div>
 
-    <h1 class="h1">Resume</h1>
-    <p class="sub">Public-friendly version. Keep personal details minimal.</p>
+    <header class="hero">
+      <h1 class="h1">Resume</h1>
+      <p class="sub">A complete, readable history. No fluff.</p>
+
+      <ul class="resume-meta" aria-label="Contact">
+        <li>Reno, NV (Open to Remote/Relocation)</li>
+        <li><a href="tel:+17754500531">775-450-0531</a></li>
+        <li><a href="mailto:mrdrewjones@gmail.com">mrdrewjones@gmail.com</a></li>
+        <li><a href="https://github.com/mrdrewj" rel="me">github.com/mrdrewj</a></li>
+        <li><a href="https://linkedin.com/in/senojwerd" rel="me">linkedin.com/in/senojwerd</a></li>
+      </ul>
+
+      <div class="actions" aria-label="Resume links">
+        <!-- put your PDF at /assets/resume.pdf (or change this href) -->
+        <a href="/assets/resume.pdf">Download PDF</a>
+      </div>
+    </header>
 
     <hr class="rule" />
 
-    <div class="kicker">Summary</div>
-    <p>
-      Python developer focused on automation, APIs, data workflows, and practical tooling.
-    </p>
-
-    <div class="kicker">Highlights</div>
-    <ul>
-      <li>Automation + integrations</li>
-      <li>API design and implementation</li>
-      <li>Data pipelines and visualization</li>
-      <li>Documentation-first approach</li>
-    </ul>
+    <section>
+      <div class="kicker">Summary</div>
+      <ul>
+        <li>Technical engineer with 10+ years building production data/software systems; 4 years shipping LLM-enabled workflows and applied ML/NLP (embeddings, clustering, classification).</li>
+        <li>Shipped multi-stage LLM pipelines with evaluation/regression testing, cost/quality benchmarking, and AWS-scheduled monitoring (ECS/EventBridge) with Datadog alerts.</li>
+        <li>Translate ambiguous problems into deployable tools that improve quality, speed, and decision-making; experienced in HIPAA-aligned QA and audit-ready workflows.</li>
+      </ul>
+    </section>
 
     <hr class="rule" />
 
-    <p class="note">
-      If you want a PDF: place it at <code>/assets/resume.pdf</code> and link it below.
-    </p>
-    <p>
-      <a href="/assets/resume.pdf">Download PDF</a>
-    </p>
+    <section>
+      <div class="kicker">Technical skills</div>
+      <ul class="resume-skilllist">
+        <li><strong>Languages:</strong> Python, SQL, JavaScript</li>
+        <li><strong>LLM systems:</strong> OpenAI API, AWS Bedrock, Claude, Llama; prompt design; multi-step workflows/agents; RAG/vector search; LangChain/LangGraph; eval &amp; regression testing; safety/tone QA</li>
+        <li><strong>ML/NLP:</strong> Transformer embeddings (DistilRoBERTa), TF-IDF, clustering (K-means), classification (logistic regression), AutoGluon; metrics (AUC/ROC); model diagnostics</li>
+        <li><strong>Data/Cloud/DevOps:</strong> AWS (SageMaker, ECS, ECR, EventBridge), Docker, Git/GitHub, CI/CD, Datadog, Linux; ETL pipelines, batch scheduling, data quality</li>
+        <li><strong>Integrations/BI:</strong> REST APIs, Google Ads API, Power BI, BigQuery, ODBC/FTP</li>
+      </ul>
+    </section>
+
+    <hr class="rule" />
+
+    <section>
+      <div class="kicker">Professional experience</div>
+
+      <article class="resume-item">
+        <div class="resume-item__head">
+          <div>
+            <div class="resume-item__title">AI Strategy and Automation Engineer</div>
+            <div class="resume-item__org">LegalMatch</div>
+            <div class="resume-item__loc">Reno, NV</div>
+          </div>
+          <div class="resume-item__when">May 2025 – Present</div>
+        </div>
+        <ul>
+          <li>Engineered a multi-stage LLM workflow (Python) to audit ~7,000 law-library articles; flagged outdated content on ~10% of pages and saved an estimated 13+ months of manual review time.</li>
+          <li>Built LLM evaluation and regression-test harnesses to compare models, prompts, settings, cost, and output quality; diagnosed and resolved a production tone defect via prompt redesign.</li>
+          <li>Optimized a SageMaker embedding + clustering pipeline (DistilRoBERTa + K-means) by excluding empty/irrelevant text during feature generation, improving runtime 50x+ while preserving results.</li>
+          <li>Productionized AWS-scheduled monitoring (ECS/EventBridge) for site quality and SEO signals; exported metrics to Datadog alerts and delivered an on-demand page-speed validation tool.</li>
+          <li>Built a lead-identification pipeline enriching ~1M visitor IPs with firm detection and non-client filtering; delivered real-time sales notifications and recommended vendor adoption after benchmarking.</li>
+          <li>Built an LLM-guided intake MVP (Python + OpenAI API) and began extension to voice AI intake using playbook-driven dialog and tool-integrated data capture.</li>
+        </ul>
+      </article>
+
+      <article class="resume-item">
+        <div class="resume-item__head">
+          <div>
+            <div class="resume-item__title">Director of Data Analytics</div>
+            <div class="resume-item__org">The Children’s Cabinet</div>
+            <div class="resume-item__loc">Reno, NV</div>
+          </div>
+          <div class="resume-item__when">Jun 2024 – Apr 2025</div>
+        </div>
+        <ul>
+          <li>Directed analytics, reporting, automation, and data infrastructure across multiple programs; standardized delivery workflows and documentation practices.</li>
+          <li>Designed and implemented Python/SQL ETL pipelines to improve data quality and accelerate delivery of program-critical datasets.</li>
+          <li>Deployed internal LLM-based assistants for staff guidance and knowledge retrieval; strengthened HIPAA-aligned QA controls for audit readiness.</li>
+          <li>Delivered production ML/NLP models for operations (no-show risk, intake routing, forecasting) embedded into workflows; improved routing accuracy by ~12 points and reduced missed appointments ~15%.</li>
+          <li>Led and mentored junior analysts; institutionalized version control and reproducible analytics practices.</li>
+        </ul>
+      </article>
+
+      <article class="resume-item">
+        <div class="resume-item__head">
+          <div>
+            <div class="resume-item__title">Systems and Data Manager</div>
+            <div class="resume-item__org">The Children’s Cabinet</div>
+            <div class="resume-item__loc">Reno, NV</div>
+          </div>
+          <div class="resume-item__when">Sep 2022 – Jun 2024</div>
+        </div>
+        <ul>
+          <li>Owned administration of enterprise CRM and reporting systems, ensuring uptime, data integrity, and secure access.</li>
+          <li>Automated grant and program performance reporting using Python and SQL, reducing errors by ~95% and eliminating manual spreadsheet workflows.</li>
+          <li>Integrated siloed sources via ODBC, automated FTP ingestion, and scheduled batch jobs to deliver consolidated datasets for analytics.</li>
+          <li>Authored training resources enabling self-serve analytics for non-technical teams; served as liaison across IT, program leadership, and vendors.</li>
+        </ul>
+      </article>
+
+      <article class="resume-item">
+        <div class="resume-item__head">
+          <div>
+            <div class="resume-item__title">Accounting Analyst</div>
+            <div class="resume-item__org">Lewis Management Corp.</div>
+            <div class="resume-item__loc">Upland, CA</div>
+          </div>
+          <div class="resume-item__when">Feb 2021 – Sep 2022</div>
+        </div>
+        <ul>
+          <li>Built Power BI dashboards and recurring finance reports to improve AP/AR visibility, spend tracking, and month-end close operations.</li>
+          <li>Automated spreadsheet workflows in Python (cleaning, validation, calculations), reducing manual reporting time and improving accuracy.</li>
+        </ul>
+      </article>
+    </section>
+
+    <hr class="rule" />
+
+    <section>
+      <div class="kicker">Geoscience experience</div>
+
+      <article class="resume-item">
+        <div class="resume-item__head">
+          <div>
+            <div class="resume-item__title">Project Geophysicist</div>
+            <div class="resume-item__org">Deep Imaging</div>
+            <div class="resume-item__loc">Houston, TX</div>
+          </div>
+          <div class="resume-item__when">Jun 2018 – Feb 2020</div>
+        </div>
+        <ul>
+          <li>Led survey design, modeling, and interpretation for CSEM projects monitoring hydraulic fracturing.</li>
+          <li>Developed Python-based tools to automate data QC, visualization, and forward modeling.</li>
+          <li>Co-authored technical papers and trade presentations.</li>
+        </ul>
+      </article>
+
+      <article class="resume-item">
+        <div class="resume-item__head">
+          <div>
+            <div class="resume-item__title">Geophysicist</div>
+            <div class="resume-item__org">Zonge International</div>
+            <div class="resume-item__loc">Reno, NV</div>
+          </div>
+          <div class="resume-item__when">Sep 2016 – Aug 2017</div>
+        </div>
+        <ul>
+          <li>Operated EM, IP, and MT surveys across mining and geothermal sites; managed field QA/QC and deliverables.</li>
+          <li>Supported initial modeling and interpretation; executed safe operations in remote environments.</li>
+        </ul>
+      </article>
+
+      <article class="resume-item">
+        <div class="resume-item__head">
+          <div>
+            <div class="resume-item__title">Geophysical Field Technician (Short Contracts)</div>
+            <div class="resume-item__org">Various</div>
+          </div>
+          <div class="resume-item__when">2013 – 2018</div>
+        </div>
+        <ul>
+          <li>Collected and QC’d data across MT, borehole EM, and magnetics surveys.</li>
+          <li>Maintained field equipment and ensured safe, efficient logistics.</li>
+        </ul>
+      </article>
+
+      <article class="resume-item">
+        <div class="resume-item__head">
+          <div>
+            <div class="resume-item__title">Geophysicist (Contract)</div>
+            <div class="resume-item__org">Vista Clara</div>
+            <div class="resume-item__loc">Mukilteo, WA</div>
+          </div>
+          <div class="resume-item__when">Jan 2022 – Apr 2022</div>
+        </div>
+        <ul>
+          <li>Conducted borehole NMR surveys and delivered analysis reports for groundwater clients.</li>
+          <li>Collaborated with hardware and R&amp;D teams to improve acquisition workflows.</li>
+        </ul>
+      </article>
+    </section>
+
+    <hr class="rule" />
+
+    <section>
+      <div class="kicker">Selected projects</div>
+      <ul>
+        <li><strong>The Planned Pan (2025):</strong> Built and launched a meal-planning and grocery optimization web app using a multi-step LLM workflow; hardened key steps with deterministic automation to improve consistency while retaining LLM calls where they add value.</li>
+        <li><strong>Youth Mental Health Navigator (2024):</strong> Built a ChatGPT-style web app (Python/Dash + OpenAI API); fine-tuned a model on a curated dataset of local providers; launched publicly and won a $25,000 Box.org innovation grant.</li>
+      </ul>
+    </section>
+
+    <hr class="rule" />
+
+    <section>
+      <div class="kicker">Education</div>
+      <ul class="resume-plainlist">
+        <li><strong>M.Sc., Geophysics</strong> — Memorial University of Newfoundland (2017)</li>
+        <li class="note">Focus: 3D EM modeling for uranium and mineral exploration</li>
+        <li><strong>B.Sc., Geophysics</strong> — University of Nevada, Reno (2014)</li>
+      </ul>
+    </section>
+
+    <hr class="rule" />
+
+    <section>
+      <div class="kicker">Selected publications</div>
+      <ul>
+        <li>Jones, D., Pieprzica, C., Vasquez, O., et al. (2019). <em>Monitoring Hydraulic Fracture Flowback.</em> URTeC 2019-230.</li>
+        <li>Hickey, M., Vasquez, O., Jones, D., et al. (2019). <em>Effects of Geologic Controls During a Zipper Frac.</em> SPE 194313-MS.</li>
+      </ul>
+    </section>
 
     <footer class="footer">
       <span>© <span id="year"></span> Drew J</span>
       <span>·</span>
-      <a href="mailto:you@example.com">you@example.com</a>
+      <a href="mailto:mrdrewjones@gmail.com">mrdrewjones@gmail.com</a>
+      <span>·</span>
+      <a href="https://github.com/mrdrewj">GitHub</a>
     </footer>
   </div>
 
