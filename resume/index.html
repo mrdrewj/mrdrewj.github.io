@@ -1,54 +1,52 @@
-<!-- /resume/index.html -->
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume — Drew J</title>
-  <meta name="description" content="Resume for Drew Jones." />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <meta name="description" content="Resume for Drew Jones.">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   <div class="container">
+    
+    <!-- Header -->
     <div class="top">
       <a class="brand" href="/">drewj.net</a>
       <nav class="nav" aria-label="Primary">
         <a href="/about/">About</a>
         <a href="/projects/">Projects</a>
-        <a href="/resume/" aria-current="page">Resume</a>
+        <a href="/resume/">Resume</a>
+        <a href="/contact/">Contact</a>
       </nav>
     </div>
 
     <header class="hero">
       <h1 class="h1">Resume</h1>
-      <p class="sub">A complete, readable history. No fluff.</p>
 
+      <div aria-label="Resume actions">
+        <a class="btn" href="/contact/">Contact Drew</a>
+        <a class="btn" href="/assets/resume.pdf">Download Resume PDF</a>
+      </div>
+
+      <hr class="rule">
+
+      <h2 class="h2">Drew Jones</h2>
       <ul class="resume-meta" aria-label="Contact">
-        <li>Reno, NV (Open to Remote/Relocation)</li>
-        <li><a href="tel:+17754500531">775-450-0531</a></li>
-        <li><a href="mailto:mrdrewjones@gmail.com">mrdrewjones@gmail.com</a></li>
+        <li>Reno, NV (Seeking Remote, Open to Relocation)</li>
         <li><a href="https://github.com/mrdrewj" rel="me">github.com/mrdrewj</a></li>
         <li><a href="https://linkedin.com/in/senojwerd" rel="me">linkedin.com/in/senojwerd</a></li>
       </ul>
-
-      <div class="actions" aria-label="Resume links">
-        <!-- put your PDF at /assets/resume.pdf (or change this href) -->
-        <a href="/assets/resume.pdf">Download PDF</a>
-      </div>
     </header>
 
-    <hr class="rule" />
+    <hr class="rule">
 
     <section>
       <div class="kicker">Summary</div>
-      <ul>
-        <li>Technical engineer with 10+ years building production data/software systems; 4 years shipping LLM-enabled workflows and applied ML/NLP (embeddings, clustering, classification).</li>
-        <li>Shipped multi-stage LLM pipelines with evaluation/regression testing, cost/quality benchmarking, and AWS-scheduled monitoring (ECS/EventBridge) with Datadog alerts.</li>
-        <li>Translate ambiguous problems into deployable tools that improve quality, speed, and decision-making; experienced in HIPAA-aligned QA and audit-ready workflows.</li>
-      </ul>
+      <p id="summary"></p>
     </section>
 
-    <hr class="rule" />
+    <hr class="rule">
 
     <section>
       <div class="kicker">Technical skills</div>
@@ -61,19 +59,19 @@
       </ul>
     </section>
 
-    <hr class="rule" />
+    <hr class="rule">
 
     <section>
       <div class="kicker">Professional experience</div>
 
       <article class="resume-item">
-        <div class="resume-item__head">
+        <div class="resume-item-head">
           <div>
-            <div class="resume-item__title">AI Strategy and Automation Engineer</div>
-            <div class="resume-item__org">LegalMatch</div>
-            <div class="resume-item__loc">Reno, NV</div>
+            <div class="resume-item-title">AI Strategy and Automation Engineer</div>
+            <div class="resume-item-org">LegalMatch</div>
+            <div class="resume-item-loc">Reno, NV</div>
           </div>
-          <div class="resume-item__when">May 2025 – Present</div>
+          <div class="resume-item-when">May 2025 – Present</div>
         </div>
         <ul>
           <li>Engineered a multi-stage LLM workflow (Python) to audit ~7,000 law-library articles; flagged outdated content on ~10% of pages and saved an estimated 13+ months of manual review time.</li>
@@ -86,13 +84,13 @@
       </article>
 
       <article class="resume-item">
-        <div class="resume-item__head">
+        <div class="resume-item-head">
           <div>
-            <div class="resume-item__title">Director of Data Analytics</div>
-            <div class="resume-item__org">The Children’s Cabinet</div>
-            <div class="resume-item__loc">Reno, NV</div>
+            <div class="resume-item-title">Director of Data Analytics</div>
+            <div class="resume-item-org">The Children's Cabinet</div>
+            <div class="resume-item-loc">Reno, NV</div>
           </div>
-          <div class="resume-item__when">Jun 2024 – Apr 2025</div>
+          <div class="resume-item-when">Jun 2024 – Apr 2025</div>
         </div>
         <ul>
           <li>Directed analytics, reporting, automation, and data infrastructure across multiple programs; standardized delivery workflows and documentation practices.</li>
@@ -104,13 +102,13 @@
       </article>
 
       <article class="resume-item">
-        <div class="resume-item__head">
+        <div class="resume-item-head">
           <div>
-            <div class="resume-item__title">Systems and Data Manager</div>
-            <div class="resume-item__org">The Children’s Cabinet</div>
-            <div class="resume-item__loc">Reno, NV</div>
+            <div class="resume-item-title">Systems and Data Manager</div>
+            <div class="resume-item-org">The Children's Cabinet</div>
+            <div class="resume-item-loc">Reno, NV</div>
           </div>
-          <div class="resume-item__when">Sep 2022 – Jun 2024</div>
+          <div class="resume-item-when">Sep 2022 – Jun 2024</div>
         </div>
         <ul>
           <li>Owned administration of enterprise CRM and reporting systems, ensuring uptime, data integrity, and secure access.</li>
@@ -121,13 +119,13 @@
       </article>
 
       <article class="resume-item">
-        <div class="resume-item__head">
+        <div class="resume-item-head">
           <div>
-            <div class="resume-item__title">Accounting Analyst</div>
-            <div class="resume-item__org">Lewis Management Corp.</div>
-            <div class="resume-item__loc">Upland, CA</div>
+            <div class="resume-item-title">Accounting Analyst</div>
+            <div class="resume-item-org">Lewis Management Corp.</div>
+            <div class="resume-item-loc">Upland, CA</div>
           </div>
-          <div class="resume-item__when">Feb 2021 – Sep 2022</div>
+          <div class="resume-item-when">Feb 2021 – Sep 2022</div>
         </div>
         <ul>
           <li>Built Power BI dashboards and recurring finance reports to improve AP/AR visibility, spend tracking, and month-end close operations.</li>
@@ -136,19 +134,41 @@
       </article>
     </section>
 
-    <hr class="rule" />
+    <hr class="rule">
+
+    <section>
+      <div class="kicker">Covid-19 Pandemic</div>
+
+      <article class="resume-item">
+        <div class="resume-item-head">
+          <div>
+            <div class="resume-item-title">Caregiver, Researcher, Python Dev, Migrant Farm Worker</div>
+            <div class="resume-item-loc">Ontario, CA</div>
+          </div>
+          <div class="resume-item-when">Feb 2020 – Feb 2021</div>
+        </div>
+        <ul>
+          <li>Laid off at the start of pandemic as work in the geophysics industry, and in general, disappeared with the rise of lockdowns.</li>
+          <li>Took care of sick family, did research into a number of topics, worked on my dev skills, helped to design and plant a 25-acre avocado farm.</li>
+          <li>Despite my extensive education and promising early career as an electromagnetic geophysicist, hope for pursuing my dream job evaporated before my eyes.</li>
+          <li>Forced to take on other work and decided to transition to data, ML, and automation with python.</li>
+        </ul>
+      </article>
+    </section>
+
+    <hr class="rule">
 
     <section>
       <div class="kicker">Geoscience experience</div>
 
       <article class="resume-item">
-        <div class="resume-item__head">
+        <div class="resume-item-head">
           <div>
-            <div class="resume-item__title">Project Geophysicist</div>
-            <div class="resume-item__org">Deep Imaging</div>
-            <div class="resume-item__loc">Houston, TX</div>
+            <div class="resume-item-title">Project Geophysicist</div>
+            <div class="resume-item-org">Deep Imaging</div>
+            <div class="resume-item-loc">Houston, TX</div>
           </div>
-          <div class="resume-item__when">Jun 2018 – Feb 2020</div>
+          <div class="resume-item-when">Jun 2018 – Feb 2020</div>
         </div>
         <ul>
           <li>Led survey design, modeling, and interpretation for CSEM projects monitoring hydraulic fracturing.</li>
@@ -158,51 +178,51 @@
       </article>
 
       <article class="resume-item">
-        <div class="resume-item__head">
+        <div class="resume-item-head">
           <div>
-            <div class="resume-item__title">Geophysicist</div>
-            <div class="resume-item__org">Zonge International</div>
-            <div class="resume-item__loc">Reno, NV</div>
+            <div class="resume-item-title">Geophysicist</div>
+            <div class="resume-item-org">Zonge International</div>
+            <div class="resume-item-loc">Reno, NV</div>
           </div>
-          <div class="resume-item__when">Sep 2016 – Aug 2017</div>
+          <div class="resume-item-when">Sep 2016 – Aug 2017</div>
         </div>
         <ul>
-          <li>Operated EM, IP, and MT surveys across mining and geothermal sites; managed field QA/QC and deliverables.</li>
+          <li>Operated Controlled-Source Electromagnetic, Induced Polarization, and Magnetotellurics surveys across mining and geothermal sites; managed field QA/QC and deliverables.</li>
           <li>Supported initial modeling and interpretation; executed safe operations in remote environments.</li>
         </ul>
       </article>
 
       <article class="resume-item">
-        <div class="resume-item__head">
+        <div class="resume-item-head">
           <div>
-            <div class="resume-item__title">Geophysical Field Technician (Short Contracts)</div>
-            <div class="resume-item__org">Various</div>
+            <div class="resume-item-title">Geophysical Field Technician (Short Contracts)</div>
+            <div class="resume-item-org">Various</div>
           </div>
-          <div class="resume-item__when">2013 – 2018</div>
+          <div class="resume-item-when">2013 – 2018</div>
         </div>
         <ul>
-          <li>Collected and QC’d data across MT, borehole EM, and magnetics surveys.</li>
+          <li>Collected and QC'd data across MT, borehole EM, and magnetics surveys.</li>
           <li>Maintained field equipment and ensured safe, efficient logistics.</li>
         </ul>
       </article>
 
       <article class="resume-item">
-        <div class="resume-item__head">
+        <div class="resume-item-head">
           <div>
-            <div class="resume-item__title">Geophysicist (Contract)</div>
-            <div class="resume-item__org">Vista Clara</div>
-            <div class="resume-item__loc">Mukilteo, WA</div>
+            <div class="resume-item-title">Geophysicist (Contract)</div>
+            <div class="resume-item-org">Vista Clara</div>
+            <div class="resume-item-loc">Mukilteo, WA</div>
           </div>
-          <div class="resume-item__when">Jan 2022 – Apr 2022</div>
+          <div class="resume-item-when">Jan 2022 – Apr 2022</div>
         </div>
         <ul>
-          <li>Conducted borehole NMR surveys and delivered analysis reports for groundwater clients.</li>
+          <li>Conducted borehole Nuclear Magnetic Resonance surveys and delivered analysis reports for groundwater clients.</li>
           <li>Collaborated with hardware and R&amp;D teams to improve acquisition workflows.</li>
         </ul>
       </article>
     </section>
 
-    <hr class="rule" />
+    <hr class="rule">
 
     <section>
       <div class="kicker">Selected projects</div>
@@ -212,7 +232,7 @@
       </ul>
     </section>
 
-    <hr class="rule" />
+    <hr class="rule">
 
     <section>
       <div class="kicker">Education</div>
@@ -223,7 +243,7 @@
       </ul>
     </section>
 
-    <hr class="rule" />
+    <hr class="rule">
 
     <section>
       <div class="kicker">Selected publications</div>
@@ -233,15 +253,40 @@
       </ul>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
-      <span>© <span id="year"></span> Drew J</span>
-      <span>·</span>
-      <a href="mailto:mrdrewjones@gmail.com">mrdrewjones@gmail.com</a>
-      <span>·</span>
-      <a href="https://github.com/mrdrewj">GitHub</a>
+      <div class="footer-inner">
+        <span>© <span data-year></span> Drew J</span>
+        <span>·</span>
+        <a href="mailto:mrdrewjones@gmail.com">mrdrewjones@gmail.com</a>
+        <span>·</span>
+        <a href="https://github.com/mrdrewj">GitHub</a>
+      </div>
     </footer>
-  </div>
 
+  </div>
   <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
+<script>
+  // Set these once and keep them accurate
+  const careerStartYear = 2015;   // first year you started building production data/software platforms
+  const llmStartYear = 2022;      // first year you started shipping LLM-enabled workflows
+
+  const nowYear = new Date().getFullYear();
+
+  // Use "10+ years" style after 10. Otherwise show the exact number.
+  function yearsLabel(startYear, plusAfter = 10) {
+    const years = Math.max(0, nowYear - startYear);
+    return years >= plusAfter ? `${plusAfter}+ years` : `${years} years`;
+  }
+
+  const careerYears = yearsLabel(careerStartYear, 10);
+  const llmYears = yearsLabel(llmStartYear, 10); // switches to "10+ years" once you cross 10
+
+document.getElementById("summary").textContent =
+  `AI/ML engineer focused on NLP and LLM systems with ${careerYears} shipping production software, data pipelines, and Python automation. ` +
+  `Over the past ${llmYears}, I have shipped LLM-enabled workflows and applied ML projects, including embeddings, clustering, and classification. ` +
+  `I build end-to-end pipelines with evaluation and regression testing, cost and quality benchmarking, and cloud monitoring, and I turn ambiguous requirements into reliable, audit-ready tools, including in HIPAA-aligned environments.`;
+
+</script>

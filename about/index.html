@@ -1,27 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — Drew J</title>
-  <meta name="description" content="About Drew J." />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <meta name="description" content="About Drew J.">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   <div class="container">
+    
+    <!-- Header -->
     <div class="top">
       <a class="brand" href="/">drewj.net</a>
       <nav class="nav" aria-label="Primary">
-        <a href="/about/" aria-current="page">About</a>
+        <a href="/about/">About</a>
         <a href="/projects/">Projects</a>
         <a href="/resume/">Resume</a>
+        <a href="/contact/">Contact</a>
       </nav>
     </div>
 
     <h1 class="h1">About</h1>
     <p class="sub">A short, human overview. One page.</p>
 
-    <hr class="rule" />
+    <hr class="rule">
 
     <p>
       In progress...
@@ -35,14 +38,21 @@
     <div class="kicker">Links</div>
     <p>
       <a href="https://github.com/mrdrewj">GitHub</a> ·
-      <a href="mailto:you@example.com">Email</a>
+      <a href="mailto:mrdrewjones@gmail.com">Email</a>
     </p>
 
+    <!-- Footer -->
     <footer class="footer">
-      <span>© <span id="year"></span> Drew J</span>
+      <div class="footer-inner">
+        <span>© <span data-year></span> Drew J</span>
+        <span>·</span>
+        <a href="mailto:mrdrewjones@gmail.com">mrdrewjones@gmail.com</a>
+        <span>·</span>
+        <a href="https://github.com/mrdrewj">GitHub</a>
+      </div>
     </footer>
-  </div>
 
+  </div>
   <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

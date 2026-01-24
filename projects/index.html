@@ -1,42 +1,52 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects — Drew J</title>
-  <meta name="description" content="Projects by Drew J." />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <meta name="description" content="Projects by Drew J.">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   <div class="container">
+    
+    <!-- Header -->
     <div class="top">
       <a class="brand" href="/">drewj.net</a>
       <nav class="nav" aria-label="Primary">
         <a href="/about/">About</a>
-        <a href="/projects/" aria-current="page">Projects</a>
+        <a href="/projects/">Projects</a>
         <a href="/resume/">Resume</a>
+        <a href="/contact/">Contact</a>
       </nav>
     </div>
 
     <h1 class="h1">Projects</h1>
     <p class="sub">A short list. Each item can link to GitHub or a dedicated page later.</p>
 
-    <hr class="rule" />
+    <hr class="rule">
 
     <div class="kicker">Selected</div>
     <ul>
-      <li><a href="#">Optics Toolkit</a> — Python utilities / notebooks for optiexperiments</li>
+      <li><a href="#">Optics Toolkit</a> — Python utilities / notebooks for optics experiments</li>
     </ul>
 
     <p class="note">
       Later, you can add pages like <code>/projects/optics-toolkit/</code> without changing this layout.
     </p>
 
+    <!-- Footer -->
     <footer class="footer">
-      <span>© <span id="year"></span> Drew J</span>
+      <div class="footer-inner">
+        <span>© <span data-year></span> Drew J</span>
+        <span>·</span>
+        <a href="mailto:mrdrewjones@gmail.com">mrdrewjones@gmail.com</a>
+        <span>·</span>
+        <a href="https://github.com/mrdrewj">GitHub</a>
+      </div>
     </footer>
-  </div>
 
+  </div>
   <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
