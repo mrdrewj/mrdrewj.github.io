@@ -3,16 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Resume — Drew J</title>
+  <title>Resume — Drew Jones</title>
   <meta name="description" content="Resume for Drew Jones.">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   <div class="container">
-    
-    <!-- Header -->
+
     <div class="top">
-      <a class="brand" href="/">drewj.net</a>
+      <a class="brand" href="/">Drew Jones</a>
       <nav class="nav" aria-label="Primary">
         <a href="/about/">About</a>
         <a href="/projects/">Projects</a>
@@ -22,22 +21,21 @@
     </div>
 
     <header class="hero">
-      <h1 class="h1">Resume</h1>
-
-      <div aria-label="Resume actions">
-        <a class="btn" href="/contact/">Contact Drew</a>
-        <a class="btn" href="/assets/resume.pdf">Download Resume PDF</a>
-      </div>
-
-      <hr class="rule">
-
-      <h2 class="h2">Drew Jones</h2>
-      <ul class="resume-meta" aria-label="Contact">
-        <li>Reno, NV (Seeking Remote, Open to Relocation)</li>
-        <li><a href="https://github.com/mrdrewj" rel="me">github.com/mrdrewj</a></li>
-        <li><a href="https://linkedin.com/in/senojwerd" rel="me">linkedin.com/in/senojwerd</a></li>
-      </ul>
+      <h1>Resume</h1>
+      <p class="sub">
+        <a href="/assets/resume.pdf">Download PDF</a> &middot;
+        <a href="/contact/">Contact</a>
+      </p>
     </header>
+
+    <hr class="rule">
+
+    <h2>Drew Jones</h2>
+    <ul class="resume-meta" aria-label="Contact">
+      <li>Reno, NV (Seeking Remote, Open to Relocation)</li>
+      <li><a href="https://github.com/mrdrewj" rel="me">github.com/mrdrewj</a></li>
+      <li><a href="https://linkedin.com/in/senojwerd" rel="me">linkedin.com/in/senojwerd</a></li>
+    </ul>
 
     <hr class="rule">
 
@@ -253,12 +251,9 @@
       </ul>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
       <div class="footer-inner">
-        <span>© <span data-year></span> Drew J</span>
-        <span>·</span>
-        <a href="https://github.com/mrdrewj">GitHub</a>
+        <span>&copy; <span data-year></span> Drew Jones</span>
       </div>
     </footer>
 
@@ -267,24 +262,21 @@
 </body>
 </html>
 <script>
-  // Set these once and keep them accurate
-  const careerStartYear = 2015;   // first year you started building production data/software platforms
-  const llmStartYear = 2022;      // first year you started shipping LLM-enabled workflows
+  const careerStartYear = 2015;
+  const llmStartYear = 2022;
 
   const nowYear = new Date().getFullYear();
 
-  // Use "10+ years" style after 10. Otherwise show the exact number.
   function yearsLabel(startYear, plusAfter = 10) {
     const years = Math.max(0, nowYear - startYear);
     return years >= plusAfter ? `${plusAfter}+ years` : `${years} years`;
   }
 
   const careerYears = yearsLabel(careerStartYear, 10);
-  const llmYears = yearsLabel(llmStartYear, 10); // switches to "10+ years" once you cross 10
+  const llmYears = yearsLabel(llmStartYear, 10);
 
 document.getElementById("summary").textContent =
   `AI/ML engineer focused on NLP and LLM systems with ${careerYears} shipping production software, data pipelines, and Python automation. ` +
   `Over the past ${llmYears}, I have shipped LLM-enabled workflows and applied ML projects, including embeddings, clustering, and classification. ` +
   `I build end-to-end pipelines with evaluation and regression testing, cost and quality benchmarking, and cloud monitoring, and I turn ambiguous requirements into reliable, audit-ready tools, including in HIPAA-aligned environments.`;
-
 </script>
