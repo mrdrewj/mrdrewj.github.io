@@ -428,3 +428,87 @@ a:hover {
   h2, .h2 { font-size: 20px; }
   .resume-meta li { white-space: normal; }
 }
+
+/* ===== Project pages ===== */
+
+.backlink {
+  display: inline-block;
+  margin-bottom: 14px;
+  text-decoration: none;
+}
+
+.project-links {
+  margin: 10px 0 26px;
+  font-family: var(--sans);
+  font-size: 14px;
+}
+
+.project-links .dot {
+  margin: 0 8px;
+  color: var(--muted);
+}
+
+.project-hero {
+  margin: 22px 0 30px;
+}
+
+.project-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--text);
+}
+
+.project-hero figcaption {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+
+.project-meta {
+  padding-left: 18px;
+  margin: 12px 0 22px;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 10px 0 22px;
+}
+
+.project-gallery figure {
+  margin: 0;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--text);
+}
+
+.project-gallery figcaption {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.project-list {
+  padding-left: 18px;
+  margin: 14px 0 0;
+}
+
+.muted {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 14px;
+}
+
+@media (max-width: 560px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+}
